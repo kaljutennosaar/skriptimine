@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# arvamusskript
+#
+echo  "Tere, minu nimi on Kalju Tennosaar"
+echo  "Minu õppegruppiks on ISP117"
+echo  "Aine arvamus: Aine on väga põnev saab koostada skripte ning see annab tulevikus palju juurde"
+echo  "Edasiminek: olen õppinud oma skripte ja tööd salvestama githubi"
