@@ -1,9 +1,15 @@
 #!/bin/bash
 #
-#tervitusskript
+#!/bin/bash
 #
-echo -n "Tere, " #väljasta ilma reavahetuseta Tere,
-echo -n "User" # väljasta ilma reavahetuseta User
-echo "!" # väljasta ! ja tee reavahetus
+#Kasutaja tervitus
 #
-#skripti lõpp 
+#Skripti algus
+#
+#echo  "Tere User!"
+echo -n "Tere " 
+echo -n `who  am i | cut -c1 | tr [:lower:] [:upper:]` #Lõikab esimese tähe ja muudab suureks
+echo -n `who am i | cut -c2-` #Lõikab tähed alates 2-st
+echo "!"
+#
+#skripti lõpp
