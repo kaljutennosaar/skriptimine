@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#Skripti algus
+
+echo -n "Tänane kuupäev on: "  #kuupäeva eeltekst
+date +"%A, %B, %d, %Y" #prindib kuupäeva
+echo -n "Kell on: "
+date +"%H:%M" #Prindib kellaaja tunnid ja minutid
+echo "Kalendri kuvamine:"
+cal #kalendri printimine
+
+#Eesmärgiks aja ja kalendir printimine
