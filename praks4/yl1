@@ -1,0 +1,6 @@
+#!/bin/bash
+#skripti algus
+echo "Palun sisestage ees-ja perenimi" #prindib alglause kasutajale
+read nimi #loob vajaliku lahtri nime sisestamiseks
+echo "Tere tulemast, $nimi" #kuvab automaatterivituse
+# lõpp
