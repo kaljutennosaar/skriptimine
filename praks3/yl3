@@ -1,0 +1,6 @@
+#!/bin/bash
+#Alustame skripti
+echo -n "Kellaaeg: "
+date +"%T" #väljastatakse arvuti tööaeg:tund/min/sek
+uptime -p #prindib kogu tööaja pikkuse
+#Lõpp
