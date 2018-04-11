@@ -1,0 +1,32 @@
+#!/bin/bash
+# Alustame skripti küpsisetordi valmistamise abimees
+  
+#KANDIKU PINDALA JA KÜPSISTE LAUSED JA SISESTUSTABELID
+ echo "sisestage kandiku pikkus(cm):"
+read pikkus
+echo "Sisesta kandiku laius (cm):"
+read laius
+echo "Sisestage palun küpsiste pikkus (cm):"
+read kypsis_pikkus
+echo "Sisestage küpsiste laius (cm):"
+read kypsis_laius
+echo "Sisestage küpsiste arv:"
+read kypsiste_arv
+echo "Sisestage kihtide arv:"
+read kihid_arvuliselt
+
+#KANDIKU JA KÜPSISTEGA SEONDUVAD ARVUTUSED
+#kandiku pind
+pindala=`expr $pikkus \* $laius`
+#küpsiste pindala
+kogus='expr $küpsis_pikkus \* $küpsis_laius
+#küsib küpsiste arvu kihis
+kihis_on= `expr $pindala / $kogus`
+
+echo "Kandiku pindalaks on $pindala cm ja küpsiste pindalaks on $kogus cm. ühes kihis on  $kihis_on küpsist"
+#vajalik pakkide arv ühe kihi jaoks
+pakkidearvkihile=`expr $pakkidearvkihile /$mitu
+#Pakke kokku
+Pakke_kokku=`expr $pakkidearvkihile /$kihtide_arv`
+#Palju peab poest ostma 
+echo "Poest tuleb osta $kokku küpsisepakki"
