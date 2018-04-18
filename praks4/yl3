@@ -1,0 +1,13 @@
+
+#!/bin/bash
+
+#Bussiekskursiooni skipt
+
+echo -n "Planeeritav reistjate arv:" #prindib  lause reisjate arvu kohta
+read reisijaid  #Tekitab sisestuslahtri reisjate arvu jaoks 
+echo -n "Mitu kohta on bussis?" #Prinditakse järgmine küsilause.
+read kohtade_arv
+
+maha_jaanud= `expr $kohtade_arv - $reisijad` #Kui palju reisijaid on maha jäänud
+taidetud=`expr $reisijad / $kohtade_arv` #Toob välja täidetud kohtade arvu.
+echo "Täis istekohti on $täidetud , maha jäi $maha_jaanud " 
