@@ -1,0 +1,18 @@
+#1/bin/bash
+
+#pindala
+
+echo -n "sisestage palun külje a väärtus"
+read a
+
+echo -n "sisestage palun külje b väärtus"
+read b
+
+echo -n sisestage palun külje c väärtus"
+read c
+
+#tulemuse genereerimine
+
+P=`echo "scale=2;($a+$b+$c)/2" | bc`  #ymbermoodu vaartus
+S=`echo "scale=2;sqrt ($P*($P-$a)*($P-$b)*($P-$c))" | bc` #pindala väärtus
+echo "Pindala=$S"
