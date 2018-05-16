@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+#Algus
+echo "pühapäev - 0, esmaspäev - 1, ... ,laupäev - 6"
+echo -n "sisesta väljasõidupäev: "
+read a
+
+echo -n "sisesta, mitu ööpäeva oled resil: "
+read oo
+
+#arvestus
+
+T=`echo "$a*$oo/5" | bc`
+echo "tagasi jõuate $T "
