@@ -1,0 +1,18 @@
+!#/bin/bash  
+
+#kolmnurga väärtuste arvutamine
+
+#vaartuste sisestamine
+
+echo -n "Sisestage külje a pikkus:"
+read a
+echo -n "Sisestage külje b pikkus:"
+read b 
+
+#arvutustehed
+
+a_ruudus=$(($a**2)) #arvutab külje a ruudu
+b_ruudus=$(($b**2)) #arvutab külje b ruudus
+C_ruudus=$(($a_ruudus+$b_ruudus)) #Valemist lähtuvalt on a ruudu ja b ruudu summa c ruudus
+c_vaartus=`echo "scale=2;sqrt($c_ruudus)" | bc` #ruutjuur c_ruudust
+echo "c=$c_vaartus"
