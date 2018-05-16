@@ -1,0 +1,20 @@
+#bin/bash
+
+echo -n "Palun sisestage täisarv: "
+read arv
+
+jaak=$(($arv % 2 )) 
+
+#kui tehte vaartus on 0, siis on paarisarv
+#kui tehte vaartus on 1, siis on paaritu
+
+if [$jaak -eq 0 ]
+then
+
+echo "Arvu $arv puhul on tegu paarisarvuga"
+
+else
+
+echo "Arvu $arv puhul on tegu paaritu arvuga"
+
+fi
