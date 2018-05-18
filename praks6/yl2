@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#loendame reisijaid
+
+echo -n "Sisestage reisijate arv: "
+read reisijad
+
+
+#loetleme kohti
+echo -n "Palun sisestage bussi istekohtade arv: "
+read kohad
+
+#Tehted
+
+bussid=$(($reisijad / $kohad))
+ylejaanud=$(($reisijad % $kohad))
+
+if test $ylejaanud -gt 0
+then
+bussid=$((bussid+1)) #Kui reisijaid on palju, peab 1 bussi juurde votma
+fi 
+echo "Kokku on vaja $bussid reisibussi"
+
+#lõpp
+
+
